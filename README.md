@@ -1,2 +1,2 @@
 # JavaScript-Projects
-Projects created during the Tech Academy's JavaScript course
+Projects created during The Tech Academy's JavaScript course
