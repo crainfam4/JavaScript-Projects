@@ -1,4 +1,5 @@
-document.write(2 + 3 > "4");                                 //document.write method displaying an operator of my choice
+var S = (2 + 3 > 4);
+document.write(typeof S);                                 //document.write method displaying a type of operator: boolean
 
 function my_Function() {                                     //The square root of a negative is not a possible number
     document.getElementById("NaN").innerHTML = Math.sqrt(-9);
