@@ -1,4 +1,4 @@
-function count_back() {
+function count_back() {                        //A function that includes a whilel loop
     var Digit = "";
     var X = 36;
     while (X > 23) {
@@ -16,14 +16,14 @@ function today() {
     var Crains = ["Kevin", "Angela", "Acacia", "Hiro", "Luna", "Mystic"];
     var Content = "";
     var C;
-    function for_Loop() {
+    function for_Loop() {                                   //This function contains a for loop
         for (C = 0; C < Crains.length; C++) {
         Content += Crains[C] + "<br>";
         }
         document.getElementById("List_of_Crains").innerHTML = Content;
 }
 
-function array_Function() {
+function array_Function() {                                //This function utilizes an array
     var Gift = [];
     Gift[0] = "ear muffs";
     Gift[1] = "a stuffed bear with a galaxy display and sleep sounds";
