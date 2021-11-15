@@ -11,6 +11,8 @@ function getReceipt() {
             text1 = text1+selectedSize+"<br>";
         }
     }
+    // The appropriate dollar value will display under the order total,
+    // depending on the selected size
     if (selectedSize === "Personal Pizza") {
         sizeTotal = 6;
     } else if (selectedSize === "Small Pizza") {
@@ -30,6 +32,7 @@ function getReceipt() {
     getTopping(runningTotal,text1);
 };
 
+// This function deals with adding the toppings checked and listing them
 function getTopping(runningTotal,text1) {
     var toppingTotal = 0;
     var selectedTopping = [];
@@ -41,12 +44,15 @@ function getTopping(runningTotal,text1) {
             text1 = text1+toppingArray[j].value+"<br>";
         }
     }
+    // This makes the first topping included in the order price for the pizza
     var toppingCount = selectedTopping.length;
     if (toppingCount > 1) {
         toppingTotal = (toppingCount - 1);
     } else {
         toppingTotal = 0;
     }
+    //This controls the output on the screen based on the items selected when the 
+    //user clicks the "Place Order" button
     runningTotal = (runningTotal + toppingTotal);
     console.log("total selected topping items: "+toppingCount);
     console.log(toppingCount+" topping - 1 free topping = "+"$"+toppingTotal+".00");
