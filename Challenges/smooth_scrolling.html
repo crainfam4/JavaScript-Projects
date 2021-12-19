@@ -6,6 +6,20 @@
         <script src = "https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
         <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            #section1 {
+                height: 540px;
+                background-color: turquoise;
+            }
+
+            #section2 {
+                height: 540px;
+                background-color: thistle;
+            }
+
             {box-sizing: border-box;}
 
             /* Button used to open the contact form - fixed at the bottom of the page */
@@ -108,6 +122,11 @@
 
     </head>
     <body>
+        <div class="main" id="section1">
+            <h2>Section 1</h2>
+            <p>Click the link below for a smooth flowing scroll to section 2.</p>
+            <a href="#section2">Click here to scroll below.</a>
+        </div>
         <div id = "like_button_container"></div>
         <script>
             const X = React.createElement;
@@ -135,6 +154,60 @@
             ReactDOM.render(X(likeButton), domContainer);
         </script>
 
+        <div id="slideshow">
+            <div>
+                Animals from Australia
+            </div>
+            <div>
+                <img src="Images/kangaroo.jpg">
+            </div>
+            <div>
+                <img src="Images/koala.jpg">
+            </div>
+            <div>
+                <img src="Images/dingo.jpg">
+            </div>
+            <div>
+                <img src="Images/kookaburra.jpg">
+            </div>
+            <div>
+                <img src="Images/wombat.jpg">
+            </div>
+            <div>
+                <img src="Images/tasmaniandevil.jpg">
+            </div>
+        </div>
+        <style>
+            #slideshow {
+                margin: 50px auto;
+                position: relative;
+                width: 400px;
+                height: 200px;
+                padding: 10px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            }
+
+            #slideshow > div {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+            }
+        </style>
+        <script>
+            $("#slideshow > div:gt(0)").hide();
+
+            setInterval(function() {
+                $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+            }, 3000);
+        </script>
+
         <button class="open-button" onclick="openForm()">Click Here for Form</button>
 
         <div class="form-popup" id="myForm">
@@ -153,5 +226,11 @@
         </div>
 
         <div class="move"></div>
+
+        <div class="main" id="section2">
+            <h2>Section 2</h2>
+            <p>Click the link below to scroll back up.</p>
+            <a href="#section1">Click here to scroll back up to section 1</a>
+        </div>
     </body>
 </html>
