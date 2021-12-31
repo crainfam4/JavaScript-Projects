@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h3>JSON.stringify method</h3>
+
+        <p id="demo"></p>
+
+        <p id="myBaby"></p>
+
+        <p id="mySchool"></p>
+
+    <script>
+        /* JSON stringify() method */
+        var obj = { "name":"KJ", "gestational age":"32.5 weeks", "gender":"boy" };
+        var myJSON = JSON.stringify(obj);
+        document.getElementById("demo").innerHTML = myJSON;
+
+        /* JSON parse() method */
+        /* The following is a JSON string variable */
+        var baby = '{"name": "KJ", "gender": "boy", "weeks_until_due_date": 7.5}';
+        var JSONstring = JSON.parse(baby);
+        document.getElementById("myBaby").innerHTML = JSONstring.name + " will be born in about " + JSONstring.weeks_until_due_date + " weeks.";
+
+        /* Sets the data as a key/value pair to be saved locally in your browser */
+        localStorage.setItem("Subject", "Math");
+        /* Use the key "Subject" to return its value "Math" */
+        document.getElementById("mySchool").innerHTML = localStorage.getItem("Subject");
+    </script>
+
+    </body>
+</html>
