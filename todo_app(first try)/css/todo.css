@@ -12,24 +12,24 @@ input {
     padding-top: 30px;
     width: 500px;
     height: 60px;
-    font-size: 40px;
-    border: 2px solid blue;
+    font-size: 30px;
+    border: 0;
 }
 
-    input:focus {
-        outline: none;
-    }
+input:focus {
+    outline: none;
+}
 
 li {
     text-align: left;
-    font-size: 40px;
+    font-size: 30px;
     list-style: none;
     margin: 0;
 }
 
 .footer {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     width: 50%;
     margin: 0 auto;
     border: blue;
