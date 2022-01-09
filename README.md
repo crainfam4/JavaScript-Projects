@@ -1,9 +1,6 @@
 # JavaScript-Projects
 Projects created during The Tech Academy's JavaScript course
 
-<<<<<<< HEAD
-<h3>Projects</h3>
-=======
 ## Projects
 
 *Calculator
@@ -25,4 +22,3 @@ The menu provides verious size and topping options for a pizza restaurant. The s
 ### Tic-Tac-Toe Game
 
 This is a one-player game of Tic-Tac-Toe against the computer. The included sound files recognize placement of each playing piece, and signify a winning game or a cat's game. A successful game includes a small animation recognizing the winning tile placements.
->>>>>>> c2f6fcbe99bf89f52b6191a1edad427daa5c34dd
