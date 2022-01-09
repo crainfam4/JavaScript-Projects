@@ -3,11 +3,11 @@ Projects created during The Tech Academy's JavaScript course
 
 ## Projects
 
-*Calculator
+* Calculator
 
-*Pizza Menu
+* Pizza Menu
 
-*Tic-Tac-Toe Game
+* Tic-Tac-Toe Game
 
 ## Descriptions:
 
